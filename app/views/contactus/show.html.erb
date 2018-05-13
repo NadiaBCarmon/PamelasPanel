@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Messages</title>
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+</head>
+<body>
+
+<a href="/dashboard"><button id="home" placeholder="Home">Home</button></a>
+
+	<table class="responsive-table">
+        <thead>
+          <tr>
+              <th><p>Name</p></th>
+              <th><p>Email</p></th>
+              <th><p>Message<p></th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+        <% @message.each do || %>
+          <tr>
+		    <td><p><%= @name %></p></td>
+			<td><p><%= @email %></p></td>
+			<td><p><%= @entermessage %></p></td>
+
+          </tr>
+      <!--    <% end %> -->
+        </tbody>
+
+      </table>
+
+<!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</body>
+</html>

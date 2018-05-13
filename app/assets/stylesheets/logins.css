@@ -1,0 +1,68 @@
+#login-main {
+	border-color: #9b50cc;
+	border-style: solid;
+	border: thin;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+}
+
+#sjalogo {
+	height: 300px;
+	width: 600px;
+	margin: 2%;
+	margin-left: 33%;
+	display: block;
+	margin-top: 5%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+/*input[type=text] {
+	border-color: #9b50cc;
+}
+
+input[type=password] {
+	border-color: #9b50cc;
+}
+
+input[type=submit] {
+	border-color: #9b50cc;
+}*/
+
+#email {
+	margin: 1%;
+	display: block;
+	margin-left: 40%;
+	height: 40px;
+	width: 20%;
+	text-align: center;
+}
+
+#password {
+	margin: 1%;
+	display: block;
+	margin-left: 40%;
+	height: 40px;
+	width: 20%;
+	text-align: center;
+}
+
+#login {
+	margin: 1%;
+	display: block;
+	height: 40px;
+	width: 20%;
+	margin-left: 40%;
+}
+
+#contactus {
+	display: block;
+	margin-left: 46%;
+	font-size: 20px;	
+	background-color: white;
+	color: black;
+}

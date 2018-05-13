@@ -1,0 +1,41 @@
+#dashboards_background {
+	/*Changes photo into a sketch*/
+	/*http://www.snapstouch.com/Sketch.aspx*/
+	background-image: url('/assets/Campus.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+}
+
+#avggrades {
+	display: inline-block;
+	margin-left: 30%;
+}
+
+#side-panel {
+	background-color: white;
+	height: 100vh;
+	width: 20%;
+	border: thin;
+	border-style: solid;
+	border-color: #9B50CC;
+	overflow: none;
+}
+
+#box {
+	height:10%;
+	width: 96%;
+	margin-left: 4%;
+	border-bottom: thin;
+	border-bottom-color: #9B50CC;
+	border-bottom-style: solid;
+	font-size: 32px;
+	overflow: none;
+	font-weight: bold;
+	overflow: none;
+}
+
+h3 {
+	color: black;
+}

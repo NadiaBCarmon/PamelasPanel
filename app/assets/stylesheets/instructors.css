@@ -1,0 +1,44 @@
+p {
+	text-align: center;
+}
+
+body {
+
+
+}
+
+#home {
+	height: 50px;
+	width: 100px;
+	font-weight: bold;
+	margin-left: 4%;
+	margin-top: 3%;
+	position: relative;
+}
+
+#add {
+	height: 50px;
+	width: 100px;
+	margin-left: 90%;
+	font-weight: bold;
+	position: relative;
+	
+}
+
+table {
+
+}
+
+thead {
+	/*ackground-color: yellow;*/
+
+}
+
+tr {
+	
+
+}
+
+tbody {
+	
+}

@@ -1,0 +1,51 @@
+<h1>Edit Instructors</h1>
+
+ <%= form_for @createinstructor do |f| %>
+
+ 	<p>
+ 		<%= f.label :cohort_id %>
+ 		<%= f.text_field :cohort_id %>
+ 	</p>
+
+
+ 	<p>
+ 		<%= f.label :course_id %>
+ 		<%= f.text_field :course_id %>
+ 	</p>
+
+
+ 	<p>
+ 		<%= f.label :instructor_firstname %>
+ 		<%= f.text_field :instructor_firstname %>
+ 	</p>
+
+
+ 	<p>
+ 		<%= f.label :instructor_lastname %>
+ 		<%= f.text_field :instructor_lastname %>
+ 	</p>
+
+
+ 	<p>
+ 		<%= f.label :instructor_age %>
+ 		<%= f.text_field :instructor_age %>
+ 	</p>
+
+
+ 	<p>
+ 		<%= f.label :instructor_salary %>
+ 		<%= f.text_field :instructor_salary %>
+ 	</p>
+
+
+ 	<p>
+ 		<%= f.label :instructor_highested %>
+ 		<%= f.text_field :instructor_highested %>
+ 	</p>
+
+
+ 	<p>
+ 		<%= f.submit %>
+ 	</p>
+
+ <% end %>

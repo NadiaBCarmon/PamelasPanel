@@ -1,0 +1,32 @@
+<h1>Add A Course</h1>
+
+ <%= form_for @addcourse do |f| %>
+
+ 	<p>
+ 		<%= f.label :cohort_id %>
+ 		<%= f.text_field :cohort_id %>
+ 	</p>
+
+
+ 	<p>
+ 		<%= f.label :course_name %>
+ 		<%= f.text_field :course_name %>
+ 	</p>
+
+
+ 	<p>
+ 		<%= f.label :course_hours %>
+ 		<%= f.text_field :course_hours %>
+ 	</p>
+
+ 	<p>
+ 		<%= f.label :course_description %>
+ 		<%= f.text_field :course_description %>
+ 	</p>
+
+
+ 	<p>
+ 		<%= f.submit %>
+ 	</p>
+
+ <% end %>

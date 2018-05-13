@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<%= stylesheet_link_tag "contactus" %>
+</head>
+<body>
+	
+
+	<h1>Contact Us!</h1>
+
+	
+	<%= form_for @message, url: "http://localhost:3000/contactus/messages", :html => {id: "contactus"} do |form| %> </br>
+	  <%= form.text_field :name, placeholder: "Your Name", :html => {id: "name"} %> </br>
+	  <%= form.text_field :email, placeholder: "Your Email", :html => {id: "email"} %> </br>
+	  <%= form.text_area :entermessage, placeholder: "Enter Your Message", :html => {id: "entermessage"} %> </br>
+	  <%= form.submit :html => {id: "submit"} %>
+
+	<% end  %>
+
+
+</body>
+</html>

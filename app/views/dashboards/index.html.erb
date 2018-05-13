@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html id="dashboards_background">
+<head>
+	<title></title>
+		<%= stylesheet_link_tag "dashboards" %>
+
+</head>
+<body>
+
+	<div id="side-panel">
+		<div id="box"><a href="/account"><p>Account</p></a></div>
+		<div id="box"><a href="/inbox"><p>Inbox</p></a></div>
+		<div id="box"><a href="/courses/view"><p>Courses</p></a></div>
+		<div id="box"><a href="/cohorts/view"><p>Cohorts</p></a></div>
+		<div id="box"><a href="/students/view"><p>Students</p></a></div>
+		<div id="box"><a href="/instructors/view"><p>Instructors</p></a></div>
+		<div id="box"><a href="/logout"><p>Logout</p></a></div>
+	</div>
+
+	<div id="avggrades" style="width:50%; height:400px;"></div>
+
+		<script>	
+		$(function () { 
+    var myChart = Highcharts.chart('avggrades', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Grades By Cohort'
+        },
+        xAxis: {
+            categories: ['Apples', 'Bananas', 'Oranges']
+        },
+        yAxis: {
+            title: {
+                text: 'Fruit eaten'
+            }
+        },
+        series: [{
+            name: 'Jane',
+            data: [1, 0, 4]
+        }, {
+            name: 'John',
+            data: [5, 7, 3]
+        }]
+    });
+});
+		</script>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"> 	
+  </script>
+
+</body>
+</html>

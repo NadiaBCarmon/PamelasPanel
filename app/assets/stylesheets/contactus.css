@@ -1,0 +1,35 @@
+h1 {
+text-align: center;
+}
+
+#contactus {
+	margin-left: 45%;
+
+}
+
+#name {
+	display: block;
+	margin: 5%;
+	/*height: 10px;
+	width: 25px;*/
+
+}
+
+#email {
+	display: block;
+	/*height: 10%;
+	width: 25%;*/
+
+}
+
+#entermessage {
+	display: block;
+	/*height: 10%;
+	width: 25%;*/
+}
+
+#submit {
+	display: block;
+	/*height: 10%;
+	width: 25%;*/
+}

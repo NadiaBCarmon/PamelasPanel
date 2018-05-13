@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html id= "courses_background">
+<head>
+	<title>Current Cohorts</title>
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <%= stylesheet_link_tag "courses" %>
+
+</head>
+<body>
+
+  <a href="/dashboard"><button id="home" placeholder="Home">Home</button></a>
+<a href="/coursess/new"><button id="add">Add A Course</button></a>
+
+	<table class="responsive-table">
+        <thead>
+          <tr>
+              <th><p>Cohort ID</p></th>
+              <th><p>Course Name</p></th>
+              <th><p>Course Hours</p></th>
+              <th><p>Course Description</p></th>
+              <th><p>Edit</p></th>
+              <th><p>Delete</p></th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+        	<% @viewcourses.each do |courses| %>
+          <tr>
+		    <td><p><%= courses.cohort_id %></p></td>
+			<td><p><%= courses.course_name %></p></td>
+			<td><p><%= courses.course_hours %></p></td>
+			<td><p><%= courses.course_description %></p></td>
+      <td><a href="/courses/edit"><p>Edit</p></a></td>
+      <td><a href="/courses/delete"><p>Delete</p></a></td>
+
+          </tr>
+         <% end %>
+        </tbody>
+
+      </table>
+
+
+<!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</body>
+</html>

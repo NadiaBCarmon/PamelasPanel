@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Current Students</title>
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <%= stylesheet_link_tag "students" %>
+</head>
+<body>
+
+    <a href="/dashboard"><button id="home" placeholder="Home">Home</button></a>
+<a href="/students/new"><button id="add">Add A Course</button></a>
+
+	<table class="responsive-table">
+        <thead>
+          <tr>
+              <th><p>Cohort ID</p></th>
+              <th><p>Course ID</p></th>
+              <th><p>First Name</p></th>
+              <th><p>Last Name</p></th>
+              <th><p>Age</p></th>
+              <th><p>Highest Education</p></th>
+              <th><p>GPA</p></th>
+              <th><p>Letter Grade</p></th>
+          </tr>
+        </thead>
+
+        <tbody>
+        	<% @viewstudents.each do |students| %>
+          <tr>
+		    <td><p><%= students.cohort_id %></p></td>
+			<td><p><%= students.course_id %></p></td>
+			<td><p><%= students.student_firstname %></p></td>
+			<td><p><%= students.student_lastname %></p></td>
+			<td><p><%= students.student_age %></p></td>
+			<td><p><%= students.student_highested %></p></td>
+			<td><p><%= students.student_gpa %></p></td>
+			<td><p><%= students.student_grade %></p></td>
+      <td><a href="/students/edit"><p>Edit</p></a></td>
+      <td><a href="/students/delete"><p>Delete</p></a></td>
+          </tr>
+            <% end %>
+        </tbody>
+
+      </table>
+
+<!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</body>
+</html>
