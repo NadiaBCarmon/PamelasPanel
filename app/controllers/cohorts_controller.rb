@@ -16,7 +16,7 @@ class CohortsController < ApplicationController
 	end
 
 	def show
-		@viewcohorts = Cohort.all
+		@viewcohorts = Cohort.all.order(cohort_name: :asc)
 		# render plain: params[:addstudent].inspect
 	end
 

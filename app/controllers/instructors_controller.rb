@@ -18,7 +18,7 @@ class InstructorsController < ApplicationController
 	end
 
 	def show
-		@viewinstructors = Instructor.all
+		@viewinstructors = Instructor.all.order(instructor_lastname: :asc)
 		# render plain: params[:addstudent].inspect
 	end
 

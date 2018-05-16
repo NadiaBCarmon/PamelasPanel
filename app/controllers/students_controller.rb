@@ -19,7 +19,7 @@ class StudentsController < ApplicationController
 	end
 
 	def show
-		@viewstudents = Student.all
+		@viewstudents = Student.all.order(student_lastname: :asc)
 		# render plain: params[:addstudent].inspect
 	end
 

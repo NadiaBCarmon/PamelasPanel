@@ -16,7 +16,7 @@ class CoursesController < ApplicationController
 	end
 
 	def show
-		@viewcourses = Course.all
+		@viewcourses = Course.all.order(course_name: :asc)
 		# render plain: params[:addstudent].inspect
 	end
 
