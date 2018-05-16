@@ -15,6 +15,7 @@ class StudentsController < ApplicationController
 	end
 
 	def edit
+		@editstudent = Student.find(params[:id])
 	end
 
 	def show
@@ -23,9 +24,18 @@ class StudentsController < ApplicationController
 	end
 
 	def update
+		@updatestudent = Student.find(params[:id])
+		if @updatestudent.update(student_params)
+			# flash[:notice] = "Article was successfully updated"
+			redirect_to '/students/view'
+		else 
+			render 'edit'
+		end
 	end
 
-	def destroy		
+	def destroy	
+	Student.find(params[:id]).destroy
+		redirect_to '/students/view'	
 	end
 
  	# private - might not work because of devise

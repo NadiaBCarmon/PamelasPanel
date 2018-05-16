@@ -1,6 +1,7 @@
 #cohorts_background {
 	/*Changes photo into a sketch*/
 	/*http://www.snapstouch.com/Sketch.aspx*/
+	background-color: white;
 	background-image: url('/assets/Insignia.png');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -26,4 +27,15 @@ table {
 
 thead {
 	background-color: white;
+}
+
+#home {
+	position: relative;
+	bottom: 28px;
+}
+
+#add {
+	position: relative;
+	bottom: 76px;
+	right: 13px;
 }

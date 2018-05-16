@@ -10,7 +10,8 @@
 <body>
 
   <a href="/dashboard"><button id="home" placeholder="Home">Home</button></a>
-<a href="/coursess/new"><button id="add">Add A Course</button></a>
+  
+  <a href="/courses/new"><button id="add">Add A Course</button></a>
 
 	<table class="responsive-table">
         <thead>
@@ -26,14 +27,14 @@
 
         <tbody>
 
-        	<% @viewcourses.each do |courses| %>
+        	<% @viewcourses.each do |course| %>
           <tr>
-		    <td><p><%= courses.cohort_id %></p></td>
-			<td><p><%= courses.course_name %></p></td>
-			<td><p><%= courses.course_hours %></p></td>
-			<td><p><%= courses.course_description %></p></td>
-      <td><a href="/courses/edit"><p>Edit</p></a></td>
-      <td><a href="/courses/delete"><p>Delete</p></a></td>
+		    <td><p><%= course.cohort_id %></p></td>
+			<td><p><%= course.course_name %></p></td>
+			<td><p><%= course.course_hours %></p></td>
+			<td><p><%= course.course_description %></p></td>
+      <td><a href="/courses/<%= course.id%>/edit/"><p>Edit</p></a></td>
+       <td id="course-<%= course.id %>"><%= link_to 'Destroy', course_path(course), method: :delete, remote:true, data: { confirm: "Are you sure you want to delete #{course.course_name }?" } %></td>
 
           </tr>
          <% end %>

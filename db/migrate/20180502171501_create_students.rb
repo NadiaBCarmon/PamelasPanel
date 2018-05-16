@@ -9,7 +9,7 @@ class CreateStudents < ActiveRecord::Migration[5.2]
     	t.string :student_password
         t.integer :student_age
         t.string :student_highested
-        t.integer :student_gpa, :precision => 2, :scale => 4
+        t.integer :student_gpa
         t.string :student_grade
     end
   end

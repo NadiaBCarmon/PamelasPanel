@@ -1,3 +1,11 @@
+html {
+	background-color: #e1bee7;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+}
+
 p {
 	text-align: center;
 	font-weight: bold;
@@ -6,10 +14,26 @@ p {
 
 table {
 	background-color: #f3e5f5;
-
+	position: relative;
+	bottom: 75px;
 }
 
 thead {
 	background-color: #e1bee7;
-
 }
+
+#home {
+	position: relative;
+	bottom: 28px;
+}
+
+#add {
+	position: relative;
+	bottom: 80px;
+	right: 13px;
+}
+
+a {
+	text-decoration: none;
+}
+

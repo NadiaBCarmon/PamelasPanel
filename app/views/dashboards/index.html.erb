@@ -8,50 +8,60 @@
 <body>
 
 	<div id="side-panel">
-		<div id="box"><a href="/account"><p>Account</p></a></div>
-		<div id="box"><a href="/inbox"><p>Inbox</p></a></div>
+		<div id="box"><a href=""><p>Account</p></a></div>
+		<div id="box"><a href=""><p>Inbox</p></a></div>
 		<div id="box"><a href="/courses/view"><p>Courses</p></a></div>
 		<div id="box"><a href="/cohorts/view"><p>Cohorts</p></a></div>
 		<div id="box"><a href="/students/view"><p>Students</p></a></div>
 		<div id="box"><a href="/instructors/view"><p>Instructors</p></a></div>
-		<div id="box"><a href="/logout"><p>Logout</p></a></div>
+		<div id="box"><a href=""><p>Logout</p></a></div>
 	</div>
 
-	<div id="avggrades" style="width:50%; height:400px;"></div>
+	<div id="avggrades" style="width:50%; height:500px;"></div>
 
-		<script>	
-		$(function () { 
-    var myChart = Highcharts.chart('avggrades', {
-        chart: {
-            type: 'bar'
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">  
+  </script>
+
+		<script>
+
+let gpa_cohort1 = <%= @gpa_cohort1 %>;
+
+let gpa_cohort2 = <%= @gpa_cohort2 %>;
+
+$(function () { 
+     var myChart = Highcharts.chart('avggrades', {
+         chart: {
+             type: 'bar'
         },
         title: {
             text: 'Grades By Cohort'
         },
         xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
+            // categories: ['WDF', 'SEI']
         },
         yAxis: {
             title: {
-                text: 'Fruit eaten'
+                text: 'GPA'
             }
         },
         series: [{
-            name: 'Jane',
-            data: [1, 0, 4]
+            name: 'WDF',
+            data: [gpa_cohort1]
+
         }, {
-            name: 'John',
-            data: [5, 7, 3]
+            name: 'SEI',
+            data: [gpa_cohort2]
         }]
     });
 });
-		</script>
 
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"> 	
-  </script>
+</script> 
+
+
 
 </body>
 </html>

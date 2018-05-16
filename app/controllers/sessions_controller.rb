@@ -12,23 +12,20 @@ class SessionsController < ApplicationController
 	end
 
 	def create
-		# @admins_email = Admin.new(params[:admin_email]) 
-		# @admin_password = Admin.new(params[:admin_password])
+		#Either change admin_email/admin_password to "username" and "password" in your migrations, forms and params or
+		#Do an If/Else statement to accept login if admin or user values match that within the Admin or User database, respectively.
+		session[:id] = Admin.find_by(admin_email: params[:admin_email], admin_password: params[:admin_password])
+		# .id
+		   redirect_to '/dashboard'
 
-		# if @admin_password.save && @admin_email.save
-		redirect_to '/dashboard'
-
-		else 
-		flash[:notice] = "Password invalid. Please try again!"
-      	flash[:color]= "invalid"
-
-		# Admin.find(session[:admin_email]) && Admin.find(session[:admin_password])
+		   # flash[:notice] = "Password invalid. Please try again!"
+	    #    flash[:color]= "invalid"
 	end
 
 	def destroy
-		@admins = Admin.all
-		@admin_email = cookies[:admin_email].delete 
-		@admin_password = cookies[:admin_password].delete
+		# @admins = Admin.all
+		# @admin_email = cookies[:admin_email].delete 
+		# @admin_password = cookies[:admin_password].delete
 	end
 
 end

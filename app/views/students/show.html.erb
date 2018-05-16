@@ -22,22 +22,24 @@
               <th><p>Highest Education</p></th>
               <th><p>GPA</p></th>
               <th><p>Letter Grade</p></th>
+              <th><p>Edit</p></th>
+              <th><p>Delete</p></th>
           </tr>
         </thead>
 
         <tbody>
-        	<% @viewstudents.each do |students| %>
+        	<% @viewstudents.each do |student| %>
           <tr>
-		    <td><p><%= students.cohort_id %></p></td>
-			<td><p><%= students.course_id %></p></td>
-			<td><p><%= students.student_firstname %></p></td>
-			<td><p><%= students.student_lastname %></p></td>
-			<td><p><%= students.student_age %></p></td>
-			<td><p><%= students.student_highested %></p></td>
-			<td><p><%= students.student_gpa %></p></td>
-			<td><p><%= students.student_grade %></p></td>
-      <td><a href="/students/edit"><p>Edit</p></a></td>
-      <td><a href="/students/delete"><p>Delete</p></a></td>
+		    <td><p><%= student.cohort_id %></p></td>
+			<td><p><%= student.course_id %></p></td>
+			<td><p><%= student.student_firstname %></p></td>
+			<td><p><%= student.student_lastname %></p></td>
+			<td><p><%= student.student_age %></p></td>
+			<td><p><%= student.student_highested %></p></td>
+			<td><p><%= student.student_gpa %></p></td>
+			<td><p><%= student.student_grade %></p></td>
+      <td><a href="/students/<%= student.id%>/edit/"><p>Edit</p></a></td>
+      <td id="student-<%= student.id %>"><%= link_to 'Destroy', student_path(student), method: :delete, remote:true, data: { confirm: "Are you sure you want to delete #{student.student_firstname}, #{student.student_lastname}?" } %></td>
           </tr>
             <% end %>
         </tbody>

@@ -25,14 +25,14 @@
 
         <tbody>
 
-        	<% @viewcohorts.each do |cohorts| %>
+        	<% @viewcohorts.each do |cohort| %>
           <tr>
-		    <td><p><%= cohorts.course_id %></p></td>
-			<td><p><%= cohorts.cohort_name %></p></td>
-			<td><p><%= cohorts.start_date %></p></td>
-			<td><p><%= cohorts.end_date %></p></td>
-      <td><a href="/cohorts/edit"><p>Edit</p></a></td>
-       <td><a href="/cohorts/delete"><p>Delete</p></a></td>
+		    <td><p><%= cohort.course_id %></p></td>
+			<td><p><%= cohort.cohort_name %></p></td>
+			<td><p><%= cohort.start_date %></p></td>
+			<td><p><%= cohort.end_date %></p></td>
+      <td><a href="/cohorts/<%= cohort.id%>/edit/"><p>Edit</p></a></td>
+       <td id="cohort-<%= cohort.id %>"><%= link_to 'Destroy', cohort_path(cohort), method: :delete, remote:true, data: { confirm: "Are you sure you want to delete #{cohort.cohort_name }?" } %></td>
       
 
 

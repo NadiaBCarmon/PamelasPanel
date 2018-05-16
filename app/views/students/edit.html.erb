@@ -1,0 +1,50 @@
+<h1>Edit A Student</h1>
+
+ <%= form_for @editstudent do |f| %>
+
+ 	<p>
+ 		<%= f.label :cohort_id %>
+ 		<%= f.text_field :cohort_id %>
+ 	</p>
+
+ 	<p>
+ 		<%= f.label :course_id %>
+ 		<%= f.text_field :course_id %>
+ 	</p>
+
+ 	<p>
+ 		<%= f.label :student_firstname %>
+ 		<%= f.text_field :student_firstname %>
+ 	</p>
+
+
+	<p>
+ 		<%= f.label :student_lastname %>
+ 		<%= f.text_field :student_lastname %>
+ 	</p>
+
+ 	<p>
+ 		<%= f.label :student_age %>
+ 		<%= f.text_field :student_age %>
+ 	</p>
+
+ 	<p>
+ 		<%= f.label :student_highested %>
+ 		<%= f.text_field :student_highested %>
+ 	</p>
+
+ 	<p>
+ 		<%= f.label :student_gpa %>
+ 		<%= f.text_field :student_gpa %>
+ 	</p>
+
+ 	<p>
+ 		<%= f.label :student_grade %>
+ 		<%= f.text_field :student_grade %>
+ 	</p>
+
+ 	<p>
+ 		<%= f.submit %>
+ 	</p>
+
+ <% end %>

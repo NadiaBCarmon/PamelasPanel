@@ -1,24 +1,34 @@
-p {
-	text-align: center;
+html {
+	background-color: #e1bee7;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
 }
 
-body {
-
+p {
+	text-align: center;
+	font-weight: bold;
+	color: black;
 }
 
 table {
-
+	background-color: #f3e5f5;
+	position: relative;
+	bottom: 75px;
 }
 
 thead {
-	/*ackground-color: yellow;*/
-
+	background-color: #e1bee7;
 }
 
-tr {
-
+#home {
+	position: relative;
+	bottom: 28px;
 }
 
-tbody {
-
+#add {
+	position: relative;
+	bottom: 78px;
+	right: 13px;
 }

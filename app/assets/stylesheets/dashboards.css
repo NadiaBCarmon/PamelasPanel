@@ -11,6 +11,9 @@
 #avggrades {
 	display: inline-block;
 	margin-left: 30%;
+	position: relative;
+	bottom: 740px;
+	left: 60px;
 }
 
 #side-panel {
@@ -33,7 +36,7 @@
 	font-size: 32px;
 	overflow: none;
 	font-weight: bold;
-	overflow: none;
+	white-space: pre-wrap;
 }
 
 h3 {

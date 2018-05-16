@@ -26,11 +26,15 @@ Instructor.create(course_id: 2, cohort_id: 2, instructor_firstname: 'Julia', ins
 Instructor.create(course_id: 1, cohort_id: 1, instructor_firstname: 'Abdul', instructor_lastname: 'Ahmed', instructor_age: 28, instructor_salary: 63000, instructor_highested: 'College')
 Instructor.create(course_id: 1, cohort_id: 2, instructor_firstname: 'Uchenna', instructor_lastname: 'Elba', instructor_age: 35, instructor_salary: 83000, instructor_highested: 'College')
 Instructor.create(course_id: 2, cohort_id: 1, instructor_firstname: 'Lionel', instructor_lastname: 'Ritchie', instructor_age: 41, instructor_salary: 43000, instructor_highested: '???')
+Instructor.create(course_id: 2, cohort_id: 1, instructor_firstname: 'Lionel', instructor_lastname: 'Özçivit', instructor_age: 41, instructor_salary: 43000, instructor_highested: '???')
 
-Student.create(cohort_id: 1, course_id: 1, student_firstname: 'Yoon Jo', student_lastname: 'Han', student_email: 'yjohan@sja1890.edu', student_password: 'J0s13', student_age: 22, student_highested: "College")
-Student.create(cohort_id: 2, course_id: 2, student_firstname: 'Merrishel', student_lastname: 'Richardson', student_email: 'mrichardson@sja1890.edu', student_password: 'J0s13', student_age: 22, student_highested: "College")
+Student.create(cohort_id: 1, course_id: 1, student_firstname: 'Yoon Jo', student_lastname: 'Han', student_email: 'yjohan@sja1890.edu', student_password: 'J0s13', student_age: 22, student_highested: "College", student_gpa: 4.0,)
+Student.create(cohort_id: 2, course_id: 2, student_firstname: 'Merrishel', student_lastname: 'Richardson', student_email: 'mrichardson@sja1890.edu', student_password: 'J0s13', student_age: 22, student_highested: "College", student_gpa: 4.0,)
 Student.create(cohort_id: 2, course_id: 2, student_firstname: 'Georgina', student_lastname: 'Hendricks', student_age: 22, student_highested: "College", student_gpa: 3.7, student_grade: "A-")
 Student.create(cohort_id: 1, course_id: 1, student_firstname: 'Merlina', student_lastname: 'Castellano', student_age: 22, student_highested: "College", student_gpa: 3.2, student_grade: "B-")
 Student.create(cohort_id: 2, course_id: 1, student_firstname: 'Kadijah', student_lastname: 'Iqbal', student_age: 22, student_highested: "College", student_gpa: 3.4, student_grade: "B")
 Student.create(cohort_id: 1, course_id: 2, student_firstname: 'Keona', student_lastname: 'Owens', student_age: 22, student_highested: "College", student_gpa: 2.7 , student_grade: "C+")
 Student.create(cohort_id: 2, course_id: 2, student_firstname: 'Tatiana', student_lastname: 'Basnislova', student_age: 22, student_highested: "College", student_gpa: 3.9 , student_grade: "A")
+Student.create(cohort_id: 1, course_id: 2, student_firstname: 'Hatice', student_lastname: 'Özçivit', student_age: 24, student_highested: "College", student_gpa: 3.6 , student_grade: "A")
+
+

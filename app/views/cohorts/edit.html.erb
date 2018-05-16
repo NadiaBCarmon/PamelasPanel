@@ -1,0 +1,33 @@
+<h1>Edit Cohorts</h1>
+
+ <%= form_for @editcohort do |f| %>
+
+ 	<p>
+ 		<%= f.label :course_id %>
+ 		<%= f.text_field :course_id %>
+ 	</p>
+
+
+ 	<p>
+ 		<%= f.label :cohort_name %>
+ 		<%= f.text_field :cohort_name %>
+ 	</p>
+
+
+ 	<p>
+ 		<%= f.label :start_date %>
+ 		<%= f.text_field :start_date %>
+ 	</p>
+
+
+	<p>
+ 		<%= f.label :end_date %>
+ 		<%= f.text_field :end_date %>
+ 	</p>
+
+
+ 	<p>
+ 		<%= f.submit %>
+ 	</p>
+
+ <% end %>

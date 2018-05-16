@@ -1,11 +1,13 @@
 class InstructorsController < ApplicationController
 
+#Rollbar API error tracking - API key stored in environment variable 
+
 	def new
 		@addinstructor = Instructor.new
 	end
 
 	def edit
-	 	@editinstructor = Instructor.find(instructor_params)
+	 	@editinstructor = Instructor.find(params[:id])
 	end
 
 	def create
@@ -21,9 +23,9 @@ class InstructorsController < ApplicationController
 	end
 
 	def update
-		@addinstructor = Instructor.find(instructor_params)
-		if @addinstructor.update
-			flash[:notice] = "Article was successfully updated"
+		@updateinstructor = Instructor.find(params[:id])
+		if @updateinstructor.update(instructor_params)
+			# flash[:notice] = "Article was successfully updated"
 			redirect_to '/instructors/view'
 		else 
 			render 'edit'
@@ -31,6 +33,8 @@ class InstructorsController < ApplicationController
 	end
 
 	def destroy		
+		Instructor.find(params[:id]).destroy
+		redirect_to '/instructors/view'
 	end
 
  	# private - might not work because of devise

@@ -12,6 +12,7 @@ class CohortsController < ApplicationController
 	end
 
 	def edit
+		@editcohort = Cohort.find(params[:id])
 	end
 
 	def show
@@ -20,9 +21,18 @@ class CohortsController < ApplicationController
 	end
 
 	def update
+			@updatecohort = Cohort.find(params[:id])
+		if @updatecohort.update(cohort_params)
+			# flash[:notice] = "Article was successfully updated"
+			redirect_to '/cohorts/view'
+		else 
+			render 'edit'
+		end
 	end
 
-	def destroy		
+	def destroy
+		Cohort.find(params[:id]).destroy
+		redirect_to '/cohorts/view'
 	end
 
  	# private - might not work because of devise
