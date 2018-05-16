@@ -37,7 +37,7 @@ class CoursesController < ApplicationController
 
  	# private - might not work because of devise
 	 	def course_params
-		 params.require(:course).permit(:cohort_id, :course_name, :course_hours, :course_description)
+		 params.require(:course).permit(:course_name, :course_hours, :course_description)
 	 	end
 	 # end
 

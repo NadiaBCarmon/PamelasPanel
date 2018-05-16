@@ -16,7 +16,6 @@
 	<table class="responsive-table">
         <thead>
           <tr>
-              <th><p>Cohort ID</p></th>
               <th><p>Course Name</p></th>
               <th><p>Course Hours</p></th>
               <th><p>Course Description</p></th>
@@ -29,7 +28,6 @@
 
         	<% @viewcourses.each do |course| %>
           <tr>
-		    <td><p><%= course.cohort_id %></p></td>
 			<td><p><%= course.course_name %></p></td>
 			<td><p><%= course.course_hours %></p></td>
 			<td><p><%= course.course_description %></p></td>

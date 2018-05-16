@@ -8,17 +8,17 @@
 
 Admin.create(admin_email: 'ncarmon@sja1890.edu', admin_password: 'J0s13')
 
+Course.create(course_name: 'NYC Web Development Fellowship', course_description: 'This is the course description for NYC WDF', course_hours: 68)
+Course.create(course_name: 'UX Design Intensive', course_description: 'This is the course description for UX Design Intensive', course_hours: 58)
+Course.create(course_name: 'Software Engineering Intensive', course_description: 'This is the course description for SEI', course_hours: 61)
+Course.create(course_name: 'Microbio 101', course_description: 'This is the course description for Microbio', course_hours: 55)
+Course.create(course_name: 'Evo Devo', course_description: 'This is the course description for Evo Devo', course_hours: 48)
+
 Cohort.create(course_id: 1, cohort_name: 'WDF Spring 2018', start_date: '03/20/2018', end_date: "07/25/2018" )
 Cohort.create(course_id: 2, cohort_name: 'WDF Fall 2018', start_date: '04/23/2018', end_date: "07/29/2018" )
 Cohort.create(course_id: 1, cohort_name: 'SEI Fall 2018', start_date: '05/27/2018', end_date: "08/26/2018" )
 Cohort.create(course_id: 2, cohort_name: 'SEI Summer 2018', start_date: '07/23/2018', end_date: "11/20/2018" )
 Cohort.create(course_id: 1, cohort_name: 'WDF Fall 2018', start_date: '03/21/2018', end_date: "06/27/2018" )
-
-Course.create(cohort_id: 1, course_name: 'NYC Web Development Fellowship', course_description: 'This is the course description for NYC WDF', course_hours: 68)
-Course.create(cohort_id: 2, course_name: 'UX Design Intensive', course_description: 'This is the course description for UX Design Intensive', course_hours: 58)
-Course.create(cohort_id: 1, course_name: 'Software Engineering Intensive', course_description: 'This is the course description for SEI', course_hours: 61)
-Course.create(cohort_id: 2, course_name: 'Microbio 101', course_description: 'This is the course description for Microbio', course_hours: 55)
-Course.create(cohort_id: 1, course_name: 'Evo Devo', course_description: 'This is the course description for Evo Devo', course_hours: 48)
 
 Instructor.create(course_id: 1, cohort_id: 1, instructor_firstname: 'David', instructor_lastname: 'Patlut', instructor_email: 'dpatlut@sja1890.edu', instructor_password: 'J0s13', instructor_age: 38, instructor_salary: 65000, instructor_highested: 'College')
 Instructor.create(course_id: 1, cohort_id: 2, instructor_firstname: 'Paul', instructor_lastname: 'Ortega', instructor_email: 'portega@sja1890.edu', instructor_password: 'J0s13', instructor_age: 42, instructor_salary: 200000000, instructor_highested: 'College')
