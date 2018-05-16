@@ -32,6 +32,7 @@ let gpa_cohort1 = <%= @gpa_cohort1 %>;
 
 let gpa_cohort2 = <%= @gpa_cohort2 %>;
 
+$( document ).on('turbolinks:load', function() {
 $(function () { 
      var myChart = Highcharts.chart('avggrades', {
          chart: {
@@ -58,7 +59,7 @@ $(function () {
         }]
     });
 });
-
+});
 </script> 
 
 
