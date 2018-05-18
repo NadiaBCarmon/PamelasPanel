@@ -1,8 +1,7 @@
 #cohorts_background {
 	/*Changes photo into a sketch*/
 	/*http://www.snapstouch.com/Sketch.aspx*/
-	background-color: white;
-	background-image: url('/assets/Insignia.png');
+	background-color: #e1bee7;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;

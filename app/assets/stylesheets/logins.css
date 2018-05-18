@@ -10,12 +10,12 @@
 }
 
 #sjalogo {
-	height: 300px;
+	height: 600px;
 	width: 600px;
 	margin: 2%;
-	margin-left: 33%;
+	margin-left: 31%;
 	display: block;
-	margin-top: 5%;
+	margin-top: 1%;
 }
 
 a {
@@ -33,6 +33,11 @@ input[type=password] {
 input[type=submit] {
 	border-color: #9b50cc;
 }*/
+
+#login-form {
+	position: relative;
+	bottom: 205px;
+}
 
 #email {
 	margin: 1%;
