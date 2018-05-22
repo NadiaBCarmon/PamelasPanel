@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Pamela's Panel
+-------------
+A school admin panel built in Ruby on Rails which utilizes CRUD functionality via form_for helpers and Ajax calls to handle the Destroy/Delete method.
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Inspiration
+-------------
+A fictitious school called Sacred Heart Academy. The client wanted a visually appealing admin panel that references school spirit. It's a school board where both students and teachers can interact.
